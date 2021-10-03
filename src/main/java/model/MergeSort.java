@@ -32,7 +32,6 @@ public class MergeSort extends SuperSort{
                     k++;
                 }
             }
-
             while(arr1.length != j){
                 numbers[i] = arr1[j];
                 i++;

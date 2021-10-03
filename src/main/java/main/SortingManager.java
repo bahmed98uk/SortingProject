@@ -1,19 +1,25 @@
 package main;
 
-import model.SuperSort;
-
+import controller.SorterFactory;
+import controller.theArray;
 import java.util.Scanner;
 
 public class SortingManager {
     public static void main(String[] args) {
         // generate random array of ints
-        System.out.println("Pick a Sorting Algorithm to use:");
         Scanner scan = new Scanner(System.in);
-        String choice = scan.next();
-        SuperSort sorter = null;
+        System.out.println("How many numbers do you want in the array?");
+        int length = scan.nextInt();
+        int[] array = new int[length];
+        theArray.generateArray(array);
 
-        if(choice.equals("b")){
-            
-        }
+        System.out.println("Pick a Sorting Algorithm to use: " +
+                "\n0: Bubble Sort" +
+                "\n1: Insertion Sort" +
+                "\n2: Merge Sort" +
+                "\n3: Quick Sort" +
+                "\n4: Selection Sort");
+        int choice = scan.nextInt();
+        SorterFactory.setSort(choice, array);
     }
 }
