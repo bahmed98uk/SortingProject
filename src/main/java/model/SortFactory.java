@@ -1,4 +1,5 @@
 package model;
 
-public interface SortFactory {
+public interface SortFactory{
+//    SuperSort getImplementation();
 }

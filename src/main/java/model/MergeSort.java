@@ -7,8 +7,8 @@ public class MergeSort extends SuperSort{
             int elementsInA1 = numbers.length / 2;
             int elementsInA2 = numbers.length - elementsInA1;
 
-            int arr1[] = new int[elementsInA1];
-            int arr2[] = new int[elementsInA2];
+            int[] arr1 = new int[elementsInA1];
+            int[] arr2 = new int[elementsInA2];
 
             for(int i = 0; i < elementsInA1; i++)
                 arr1[i] = numbers[i];
@@ -20,7 +20,7 @@ public class MergeSort extends SuperSort{
             sort(arr2);
 
             int i = 0, j = 0, k = 0;
-            while(arr1.length != j && arr2.length != k) {
+            while(arr1.length != j && arr2.length != k){
                 if(arr1[j] < arr2[k]){
                     numbers[i] = arr1[j];
                     i++;
@@ -33,12 +33,12 @@ public class MergeSort extends SuperSort{
                 }
             }
 
-            while(arr1.length != j) {
+            while(arr1.length != j){
                 numbers[i] = arr1[j];
                 i++;
                 j++;
             }
-            while(arr2.length != k) {
+            while(arr2.length != k){
                 numbers[i] = arr2[k];
                 i++;
                 k++;
