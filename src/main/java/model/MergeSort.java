@@ -3,6 +3,7 @@ package model;
 public class MergeSort extends SuperSort{
     @Override
     public void sort(int[] numbers){
+        // Merge Sort implementation
         if(numbers.length > 1){
             int elementsInA1 = numbers.length / 2;
             int elementsInA2 = numbers.length - elementsInA1;

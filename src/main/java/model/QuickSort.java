@@ -1,6 +1,7 @@
 package model;
 
 public class QuickSort extends SuperSort {
+    // Quick Sort implementation
     public void quickSort(int[] numbers, int left, int right) {
         int i = left, j = right;
         int tmp;

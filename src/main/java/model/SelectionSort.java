@@ -1,6 +1,7 @@
 package model;
 
 public class SelectionSort extends SuperSort{
+    // Selection Sort implementation
     @Override
     public void sort(int[] arr) {
         int n = arr.length;

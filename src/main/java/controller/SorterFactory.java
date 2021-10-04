@@ -13,11 +13,12 @@ public class SorterFactory {
     public static Scanner scan = new Scanner(System.in);
     public static String unsorted;
 
-    public static void setSort(int sortChoice, int[] array){
+    public static void setSort(int[] array){
+        // Choose the algorithm to use and instantiate the sort object
         unsortedArray = array;
         sortedArray = array;
         unsorted = DisplayManager.printUnsortedArray(unsortedArray);
-        sortChoice = scan.nextInt();
+        int sortChoice = scan.nextInt();
 
         do{
             switch(sortChoice){
@@ -48,6 +49,7 @@ public class SorterFactory {
     }
 
     private static void sort(SuperSort sorter, int[] array){
+        //Sort the array and find time taken to sort
         System.out.println(unsorted);
         long time1 = System.nanoTime();
         sorter.sort(array);
@@ -56,9 +58,11 @@ public class SorterFactory {
         DisplayManager.printArray(array, time);
     }
     private static void sorter(){
+        // Call sort method
         sort(sorter, unsortedArray);
     }
     private static boolean keepGoing(){
+        //Check to keep sorting
         DisplayManager.cont();
         cont = scan.next();
         if(cont.equalsIgnoreCase("Y") || cont.equalsIgnoreCase("yes")){
@@ -68,5 +72,4 @@ public class SorterFactory {
         }
         else return false;
     }
-    private static final Logger log = Logger.getLogger("Array Sorter logger.");
 }

@@ -16,9 +16,9 @@ public class SortingManager {
 
         // Ask user which algorithm to use
         DisplayManager.displayQuestions();
+
         // Call factory controller to set sort type
-        int choice = 0;
-        SorterFactory.setSort(choice, array);
+        SorterFactory.setSort(array);
         PropertyConfigurator.configure("src/log4j.properties");
     }
     private static final Logger log = Logger.getLogger("Array Sorter logger.");
