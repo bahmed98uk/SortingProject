@@ -2,7 +2,7 @@ package model;
 
 public class SelectionSort extends SuperSort{
     @Override
-    public void sort(int arr[]) {
+    public void sort(int[] arr) {
         int n = arr.length;
 
         // One by one move boundary of unsorted subarray

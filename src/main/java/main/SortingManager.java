@@ -2,6 +2,7 @@ package main;
 
 import controller.SorterFactory;
 import controller.theArray;
+import view.DisplayManager;
 import java.util.Scanner;
 
 public class SortingManager {
@@ -13,12 +14,7 @@ public class SortingManager {
         int[] array = new int[length];
         theArray.generateArray(array);
 
-        System.out.println("Pick a Sorting Algorithm to use: " +
-                "\n0: Bubble Sort" +
-                "\n1: Insertion Sort" +
-                "\n2: Merge Sort" +
-                "\n3: Quick Sort" +
-                "\n4: Selection Sort");
+        DisplayManager.displayQuestions();
         int choice = scan.nextInt();
         SorterFactory.setSort(choice, array);
     }

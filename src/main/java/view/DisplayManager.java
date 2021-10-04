@@ -1,13 +1,20 @@
 package view;
 
+import java.util.Arrays;
+
 public class DisplayManager {
 
-    public static void generateArray(int[] arr){
-        float time1 = (float)System.nanoTime();
-        System.out.println();
-        for (int i : arr) System.out.print(i + ", ");
+    public static void generateArray(int[] arr, long time){
+        System.out.println("Sorted Array: " + Arrays.toString(arr));
+        System.out.println("Time to sort: " + time + " nanoseconds");
+    }
 
-        float time2 = (float) System.nanoTime();
-        System.out.println("\nTime: " + ((time2-time1)/100000000) + " seconds");
+    public static void displayQuestions(){
+        System.out.println("Pick a Sorting Algorithm to use: " +
+                "\n0: Bubble Sort" +
+                "\n1: Insertion Sort" +
+                "\n2: Merge Sort" +
+                "\n3: Quick Sort" +
+                "\n4: Selection Sort");
     }
 }

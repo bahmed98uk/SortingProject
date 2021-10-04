@@ -2,7 +2,7 @@ package model;
 
 public class InsertionSort extends SuperSort{
     @Override
-    public void sort(int arr[]) {
+    public void sort(int[] arr) {
         int n = arr.length;
         for (int i = 1; i < n; ++i) {
             int key = arr[i];
