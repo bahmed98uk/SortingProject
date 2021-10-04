@@ -6,7 +6,7 @@ For this project the main design patterns I used for the structure were the
 **Model-View-Controller** and the **Factory Design Pattern**.
 
 I also implemented **exception handling** and **JUnit tests** in this
-project in order to test various parts of my project and
+project in order to test various parts of it and
 log specific errors where required.
 
 For future variations of this project, I would like to implement more
