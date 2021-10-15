@@ -2,7 +2,6 @@ import controller.TheArray;
 import org.junit.jupiter.api.Test;
 import view.DisplayManager;
 import java.util.Arrays;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class testClass {

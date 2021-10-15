@@ -1,15 +1,10 @@
 package main;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 import controller.*;
 import view.DisplayManager;
-import java.util.Scanner;
 
 public class SortingManager {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-
         // Generate array of random ints
         int length = DisplayManager.howManyNumbers();
         int[] array = TheArray.generateArray(length);
