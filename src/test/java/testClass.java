@@ -9,6 +9,7 @@ public class testClass {
     public void testArrayLength(){
         assertSame(TheArray.getUnsortedArray(), TheArray.unsortedArray);
     }
+
     @Test
     public void testUnsortedPrint(){
         assertEquals(DisplayManager.printUnsortedArray(TheArray.getUnsortedArray()),

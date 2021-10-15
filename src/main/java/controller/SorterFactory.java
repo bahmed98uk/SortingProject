@@ -1,7 +1,6 @@
 package controller;
 
 import model.*;
-import org.apache.log4j.Logger;
 import view.DisplayManager;
 import java.util.Scanner;
 

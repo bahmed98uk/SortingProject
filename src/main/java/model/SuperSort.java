@@ -1,6 +1,6 @@
 package model;
 
-public abstract class SuperSort implements SortFactory{
+public abstract class SuperSort{
     // Super class for the algorithms
     public void sort(int[] numbers){
     }
