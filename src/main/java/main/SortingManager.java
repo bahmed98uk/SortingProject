@@ -12,14 +12,12 @@ public class SortingManager {
 
         // Generate array of random ints
         int length = DisplayManager.howManyNumbers();
-        int[] array = theArray.generateArray(length);
+        int[] array = TheArray.generateArray(length);
 
         // Ask user which algorithm to use
         DisplayManager.displayQuestions();
 
         // Call factory controller to set sort type
         SorterFactory.setSort(array);
-        PropertyConfigurator.configure("src/log4j.properties");
     }
-    private static final Logger log = Logger.getLogger("Array Sorter logger.");
 }

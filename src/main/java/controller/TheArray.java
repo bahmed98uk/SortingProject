@@ -1,6 +1,6 @@
 package controller;
 
-public class theArray {
+public class TheArray {
     public static int[] unsortedArray;
 
     public static int[] generateArray(int a) {
